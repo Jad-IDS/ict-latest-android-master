@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ticket_item"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#A9A9A9"
+    android:divider="@drawable/divider"
+    android:showDividers="middle" >
+
+    <TextView
+        android:id="@+id/updatedate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1.2"
+        android:padding="5dp"
+        android:gravity="right"
+        android:paddingRight="3dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/cra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/sendingdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/back"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/main_bar"
+        layout="@layout/code_activity_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/rllanguagespinner"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/langTxt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:popupBackground="@android:color/white" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvlanguage"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                android:text="@string/language_settings"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <View style="@style/settings_separator" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/tvnotification"
+                android:layout_centerVertical="true"
+                android:text="@string/notification_settings"
+                android:textColor="@color/black" />
+
+
+            <ToggleButton
+                android:id="@+id/tgnotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/notification_selector_day"
+                android:onClick="setUpNotification"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View style="@style/settings_separator" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:id="@+id/tvQos"
+                android:layout_centerVertical="true"
+                android:text="@string/qos_settings"
+                android:textColor="@color/black" />
+
+
+            <ToggleButton
+                android:id="@+id/tgQos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/notification_selector_day"
+                android:onClick="setUpQos"
+                android:textOff=""
+                android:textOn="" />
+        </RelativeLayout>
+
+        <View style="@style/settings_separator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:textSize="15sp"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                android:text="@string/emailOpt"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_bg"
+                android:padding="5dp"
+                android:gravity="start"
+                android:id="@+id/email"
+                android:inputType="textEmailAddress" />
+
+        </LinearLayout>
+
+        <View style="@style/settings_separator" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rdgtheme"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layoutDirection="ltr"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                segmentedgroup:sc_border_width="1dp"
+                segmentedgroup:sc_checked_text_color="@color/white"
+                segmentedgroup:sc_tint_color="@color/bordo"
+                segmentedgroup:sc_unchecked_tint_color="#1100ff">
+
+                <RadioButton
+                    android:id="@+id/rbnavy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="33dp"
+                    android:onClick="clickTheme"
+                    android:minWidth="60dp"
+                    android:padding="5dp"
+                    android:text="@string/theme_navy"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbmaroon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:onClick="clickTheme"
+                    android:gravity="center"
+                    android:minHeight="33dp"
+                    android:minWidth="60dp"
+                    android:padding="5dp"
+                    android:text="@string/theme_maroon"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/rbauto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:onClick="clickTheme"
+                    android:gravity="center"
+                    android:minHeight="33dp"
+                    android:minWidth="60dp"
+                    android:padding="5dp"
+                    android:text="@string/auto"
+                    android:textSize="12sp" />
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvtheme"
+                android:layout_gravity="start|center_vertical"
+                android:text="@string/theme"
+                android:textAlignment="viewStart"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/tvVersionNumber"
+            android:textSize="12sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="60dp"
+            android:paddingEnd="60dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/btnsubmit"
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bordo"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Finish"
+            android:clipToPadding="false"
+            android:elevation="12dp"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/progressBarLayout"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:indeterminateTint="@color/gray"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/menu_footer_new"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

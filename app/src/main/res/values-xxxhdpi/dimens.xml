@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--<dimen name="margin">120dp</dimen>  110dp -->
+    <!--<dimen name="margin_down">96dp</dimen>-->
+
+    <dimen name="margin">105dp</dimen>
+    <dimen name="margin_down">96dp</dimen> 
+    <dimen name="margin_2">80dp</dimen>
+   <!-- <dimen name="margin_3">95dp</dimen>-->
+    <dimen name="margin_3">80dp</dimen>
+</resources>

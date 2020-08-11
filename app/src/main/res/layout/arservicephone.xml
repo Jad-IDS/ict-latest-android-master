@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+    <ListView
+        android:id="@+id/listMenu1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip"
+        android:background="@color/white"
+ >
+
+    </ListView>
+    
+  <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+        
+     <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_mainbar" />
+     
+    
+         <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+
+     <ImageView
+         android:id="@+id/img1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+
+         android:adjustViewBounds="true"
+         android:src="@drawable/ersal" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/img1"
+         android:background="@drawable/bigbutton"
+         android:gravity="center"
+         android:text="إختر نوع الخدمة التي تود إرسال تقرير عنها"
+         android:textColor="@color/white"
+         android:textColorHint="@color/white"
+         android:textStyle="bold" />
+
+<LinearLayout
+    android:id="@+id/line1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/footer"
+    android:layout_below="@+id/textView2"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/fixed_button"
+         android:layout_width="0dp"
+    android:layout_weight="0.5"
+        android:layout_height="match_parent"
+        android:background="@drawable/telicon"
+        android:text="خدمات الخط الثابت"
+        android:gravity="bottom|center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:paddingBottom="14dp"
+        android:scaleType="center" />
+
+<Button
+    android:id="@+id/mob_button"
+    android:layout_width="0dp"
+    android:layout_weight="0.5"
+    android:layout_height="match_parent"
+    android:background="@drawable/mobileicon"
+    android:text="خدمات الجوال"
+        android:gravity="bottom|center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:paddingBottom="14dp"
+        android:scaleType="center" />
+
+</LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

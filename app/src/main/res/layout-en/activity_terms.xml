@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/termMainRL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E8E8" >
+
+    <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/code_activity_top"
+        android:visibility="gone" />
+
+    <TableLayout
+        android:layout_below="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/footer"
+ >
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" >
+
+            <WebView
+                android:id="@+id/webView1"
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:layout_margin="10dp"
+                android:layout_height="fill_parent"
+                android:padding="10dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/progressBarLayout"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:indeterminateTint="@color/gray"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+</RelativeLayout>

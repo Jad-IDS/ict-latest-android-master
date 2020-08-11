@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bordo"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="close"
+            android:padding="10dp"
+            android:text="X"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:text="@string/send_comment0"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:layout_margin="10dp"
+
+        android:background="@color/white"
+       android:layout_above="@+id/bott"
+        android:divider="@color/white"
+        android:dividerHeight="3dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bott"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/gray_light"
+         android:layout_marginBottom="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            android:text="@string/newfeedback"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/feedback"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="3dp"
+            android:gravity="left"
+            android:lines="3"
+            android:maxLines="3"
+            android:background="@drawable/emailborder"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/sendbutton"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlTopLayer" >
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/deletelayout"
+                        android:visibility="gone"
+                        android:layout_toEndOf="@+id/uploadlin"
+                        android:layout_centerInParent="true"
+                        android:clickable="true"
+                        android:onClick="delete" >
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:onClick="delete"
+                            android:padding="3dp"
+                            android:src="@drawable/delete" />
+
+                        <TextView
+                            android:id="@+id/path"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img2"
+                            android:clickable="true"
+                            android:onClick="delete"
+                            android:padding="3dp"
+                            android:text="@string/delete"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/uploadlin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:clickable="true"
+                        android:onClick="upload" >
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:clickable="true"
+                            android:onClick="upload"
+                            android:padding="3dp"
+                            android:src="@drawable/upload" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img1"
+                            android:clickable="true"
+                            android:onClick="upload"
+                            android:padding="3dp"
+                            android:text="@string/upload"
+                            android:textColor="@android:color/black" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rlTopLayer"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:padding="4dp"
+                    android:onClick="viewPic" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textSize="12sp"
+                        android:clickable="true"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+
+                        android:shadowRadius="2"
+                        android:shadowColor="@color/black"
+                        android:onClick="viewPic"
+                        android:textStyle="bold"
+                        android:id="@+id/tvRealPath"
+                        android:text=""
+                        android:textColor="@android:color/black" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/sendlocationlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:clickable="true"
+                android:visibility="gone"
+                android:onClick="sendlocation" >
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:onClick="sendlocation"
+                    android:padding="3dp"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img5"
+                    android:clickable="true"
+                    android:onClick="sendlocation"
+                    android:padding="3dp"
+                    android:text="@string/sendlocation"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/sendbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/button_bordo"
+                android:clickable="true"
+                android:onClick="send"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="12sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:clipToPadding="false"
+                android:elevation="8dp"
+                android:text="@string/send"
+                android:textColor="@color/white" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/progressBarLayout"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:indeterminateTint="@color/gray"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

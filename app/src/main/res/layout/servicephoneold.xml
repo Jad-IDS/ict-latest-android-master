@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+
+    <ListView
+        android:id="@+id/listMenu1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip"
+        android:background="@color/white"
+ >
+
+    </ListView>
+    
+  <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff">
+        
+     <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_mainbar" />
+     
+    
+         <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+       
+      <TableLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+
+          android:layout_above="@+id/footer"
+          android:layout_centerHorizontal="true"
+          android:layout_weight="1" >
+
+      <TableRow
+            android:id="@+id/tableRow2"
+             android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+
+           
+
+        </TableRow>
+
+          <TableRow
+            android:id="@+id/tableRow1"
+             android:layout_marginLeft="0dp"
+             android:layout_marginRight="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+
+      <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:text="Please choose which service you would like to report your feedback"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="@drawable/button"
+        android:textStyle="bold" />
+      
+  </TableRow>
+  <TableRow
+        android:id="@+id/tableRow411"
+            android:layout_width="fill_parent"
+               android:layout_marginLeft="10dp"
+               android:descendantFocusability="beforeDescendants"
+  android:focusableInTouchMode="true"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+          
+
+        </TableRow>
+  <TableRow
+        android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+
+      <Button
+          android:id="@+id/mob_button"
+          android:layout_height="wrap_content"
+          android:background="@drawable/mobile"
+          android:text="Mobile"
+          
+      android:layout_width="wrap_content"
+      android:textSize="22dp"
+          android:textColor="@color/black"
+          android:textStyle="bold" />
+
+  </TableRow>
+  <TableRow
+
+            android:layout_width="fill_parent"
+               android:layout_marginLeft="10dp"
+               android:descendantFocusability="beforeDescendants"
+  android:focusableInTouchMode="true"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+          
+
+        </TableRow>
+   <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+
+  <Button
+      android:id="@+id/fixed_button"
+      android:layout_height="wrap_content"
+    android:textSize="22dp"
+      android:layout_width="wrap_content"
+      android:background="@drawable/telicon"
+      android:textColor="@color/black"
+      android:text="Fixed Line"
+      android:textStyle="bold"
+       />
+
+  </TableRow>
+</TableLayout>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E6E8E8"
+    android:layout_alignParentTop="true">
+
+    <ListView
+        android:id="@+id/listMenu1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:background="#E6E8E8">
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/menu_footer_new"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/mainbar"
+            layout="@layout/code_activity_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@android:style/Widget.ProgressBar.Inverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/mainbar">
+
+            <WebView
+                android:id="@+id/faq_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:fitsSystemWindows="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:id="@+id/progressBarLayout"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:id="@+id/progressBar"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:indeterminateTint="@color/gray"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="visible"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

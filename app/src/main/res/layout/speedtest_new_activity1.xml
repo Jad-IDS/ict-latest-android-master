@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainmenu"
+    android:layout_width="match_parent"
+    android:foreground="@drawable/shape_window_dim"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+
+    <RelativeLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.Widget.AppCompat.ProgressBar"
+            android:indeterminateTint="@color/gray"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:layout_centerInParent="true"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E6E8E8">
+
+        <include
+            android:id="@+id/footer"
+            layout="@layout/menu_footer_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <include
+            android:id="@+id/mainbar"
+            layout="@layout/code_activity_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:id="@+id/rell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mainbar"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#E6E8E8"
+                    android:paddingTop="10dp"
+                    android:text="@string/about_speed_test"
+                    android:textColor="@color/gray"
+                    android:textSize="17sp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/startBtn"
+                    android:layout_below="@id/textView1">
+
+                    <TextView
+                        android:id="@+id/about_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="@color/gray"
+                        android:textSize="14sp" />
+                </ScrollView>
+
+                <Button
+                    android:id="@+id/startBtn"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="@color/bordo"
+                    android:onClick="start"
+                    android:padding="5dp"
+                    android:text="@string/start_button"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/topss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/gray_light"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/llCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/gray_light"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/rlDownload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="40dp"
+                                android:layout_marginStart="40dp"
+                                android:background="@color/bordo"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/lb_download"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="3dp"
+                                    android:text="@string/download_lable"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlUpload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="40dp"
+                                android:layout_marginStart="40dp"
+                                android:background="@color/bordo"
+                                android:paddingTop="5dp">
+
+                                <TextView
+                                    android:id="@+id/lb_upload"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="3dp"
+                                    android:text="@string/upload_lable"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/valuess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topss"
+                    android:background="@color/gray_light"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txt_download"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="-"
+                                android:textColor="@color/bordo"
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:id="@+id/txt_upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center_horizontal"
+                                android:padding="3dp"
+                                android:text="-"
+                                android:textColor="@color/bordo"
+
+                                android:textSize="13sp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/fl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/ll2"
+                    android:layout_below="@+id/valuess">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:src="@drawable/gauge_bg1"
+                        android:tint="@color/gray" />
+
+                    <com.ids.ict.classes.GaugeView
+                        android:id="@+id/gauge_view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="12dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:visibility="gone"
+                            android:layout_marginRight="20dp"
+                           >
+
+                            <ImageView
+                                android:id="@+id/retstbtns"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:layout_centerVertical="true"
+                                android:onClick="start"
+                                android:background="@drawable/button"
+                                android:textColor="@color/white"
+                                />
+
+                            <TextView
+                                android:id="@+id/lbl_restartbutton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_centerHorizontal="true"
+                                android:gravity="center"
+                                android:paddingBottom="15dp"
+                                android:paddingRight="20dp"
+                                android:text="@string/start_button"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:id="@+id/retstbtn"
+                            android:layout_marginStart="30dp"
+                            android:textColor="@color/white"
+                            android:layout_marginEnd="30dp"
+                            android:background="@drawable/button_bordo"
+                            android:textSize="18sp"
+                            android:onClick="start"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/start_button"
+                            android:clipToPadding="false"
+                            android:elevation="5dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:visibility="gone">
+
+                        <Button
+                            android:id="@+id/sndtbtn"
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_margin="5dp"
+                            android:background="@color/bordo"
+                            android:onClick="c"
+                            android:padding="5dp"
+                            android:text="@string/send_button"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="center">
+
+
+                        <ImageView
+                            android:id="@+id/aboutusbuttons"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:onClick="showpopupaboutus"
+                            android:src="@drawable/button"
+                            android:textColor="@color/white"
+
+
+                            />
+
+                        <TextView
+                            android:id="@+id/aboutustexts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:onClick="showpopupaboutus"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="@string/aboutus"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp"
+                            android:paddingStart="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:paddingEnd="10dp"
+                            android:id="@+id/aboutusbutton"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:background="@drawable/button_bordo"
+                            android:layout_gravity="center_horizontal"
+                            android:onClick="showpopupaboutus"
+                            android:text="@string/aboutus"
+                            android:clipToPadding="false"
+                            android:elevation="5dp"
+                            android:layout_below="@+id/aboutusbuttons"
+                            android:layout_toEndOf="@+id/aboutusbuttons" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

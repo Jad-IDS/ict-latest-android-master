@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/footer"
+    android:layoutDirection="ltr"
+    android:baselineAligned="true"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:onClick="footer"
+
+        android:src="@drawable/home_new" />
+
+    <ImageButton
+        android:id="@+id/settings"
+        style="@style/footer_button"
+        android:layout_weight="4"
+        android:onClick="goToSettings"
+        android:src="@drawable/setting"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/morebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_weight="0.7"
+        android:padding="7dp"
+        android:layout_gravity="center_vertical"
+        android:onClick="footer"
+        android:src="@drawable/more" />
+
+</LinearLayout>

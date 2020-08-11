@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ListView
+        android:id="@+id/listMenu1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <include
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/menu_footer_new" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@id/footer"
+            android:layout_alignParentTop="true"
+            android:fadeScrollbars="true"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/mainbar1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/app_mainbar" />
+
+                <include
+                    android:id="@+id/mainbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/report_mainbar" />
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:padding="15dp" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.1" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.50"
+                                android:text="Service Number"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textVw2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.83"
+                                android:text="(Please enter your affected mobile number)"
+                                android:textColor="@color/red"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:baselineAligned="false" >
+
+                        <EditText
+                            android:id="@+id/editText1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:inputType="phone"
+                            android:text="+974"
+                            android:textSize="14dp" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <EditText
+                            android:id="@+id/fil_num_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:inputType="phone"
+                            android:maxLength="8" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow411"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView2110"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0.01" >
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="E-mail (optional)"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow5"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.001" >
+
+                        <EditText
+                            android:id="@+id/fill_email_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:ems="10" >
+                        </EditText>
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView212"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow6"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.02" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.05"
+                                android:text="Issue"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textVw21"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="0.46"
+                                android:text="(required)"
+                                android:textColor="@color/red"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.01" >
+
+                        <EditText
+                            android:id="@+id/spinCountry"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:drawableRight="@drawable/iconspinner"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView1112"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.02" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/textView41"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Comments"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.03" >
+
+                        <EditText
+                            android:id="@+id/comment_edit"
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:maxLength="500" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView2112"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow10"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.02" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/textView42"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Service Provider"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.001" >
+
+                        <EditText
+                            android:id="@+id/spinSP"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:drawableRight="@drawable/iconspinner"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView2113"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow101"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.02" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/textView4_roa"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Roaming Country"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/black"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow111"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.001" >
+
+                        <EditText
+                            android:id="@+id/spinRoam"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:drawableRight="@drawable/iconspinner"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:visibility="gone" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView2114"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05" >
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Location"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow1151"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05" >
+
+                        <TextView
+                            android:id="@+id/locattion_date"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.05"
+                        android:descendantFocusability="beforeDescendants"
+                        android:focusableInTouchMode="true" >
+
+                        <TextView
+                            android:id="@+id/textView2115"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <Button
+                                android:id="@+id/send_button_rep"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3.7"
+                                android:background="@drawable/button"
+                                android:onClick="onClick"
+                                android:tag="en"
+                                android:text="Send"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+
+                            <Button
+                                android:id="@+id/cancel_button"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="3.7"
+                                android:background="@drawable/button"
+                                android:onClick="onClick"
+                                android:tag="en"
+                                android:text="Cancel"
+                                android:textColor="@color/black"
+                                android:textSize="20dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"
+                            android:visibility="gone" >
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

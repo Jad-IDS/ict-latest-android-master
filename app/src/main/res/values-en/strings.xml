@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="send_comment0">المتابعة</string>
+    <string name="send_comment">متابعة</string>
+    <string name="send_comment2">ارسال تعليق</string>
+    <string name="update_location">تحديث الموقع</string>
+    <string name="language_key">language</string>
+    <string name="useragent">Mozilla/5.0 (Linux; Android 2.2; Nexus 5 Build/BuildID) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36</string>
+    <string name="logo">logo</string>
+    <string name="app_name">Arsel</string>
+    <string name="server_registered">تم التسجيل بالخادم لتلقي الإخطارات</string>
+    <string name="server_unregistered">تم إيقاف تلقي الإخطارات</string>
+    <string name="ok">تم</string>
+
+    <string name="qos_settings">جودة الخدمة</string>
+
+    <string name="aboutspeedtest">عن قياس السرعة</string>
+    <string name="All">الكل</string>
+    <string name="ServiceProviderChoose">اختيار مزود الخدمة</string>
+    <string name="service_provider">مزود الخدمة</string>
+    <string name="service_provider2">Service provider</string>
+    <string name="issue_type">نوع المشكلة</string>
+    <string name="action_settings">Settings</string>
+    <string name="updatepopup">الرجاء تحديث تطبيق أرسل</string>
+    <string name="lang">ar</string>
+    <string name="loading">Loading</string> 
+    <string name="upload">رفع ملف</string>
+    <string name="sendlocation">إرسال الموقع</string>
+    <string name="failedtitle">لم يتم إرسال الرسالة بنجاح</string>
+    <string name="failedtext">فشل في إرسال التقرير بسبب عدم الاتصال بالإنترنت. سيتم إرسال الرسالة مباشرة بعد الاتصال بالإنترنت</string>
+    <string name="failedbutton">متابعة</string>
+    <string name="networkSuccesmsg">مزود الشبكة ممكن. يرجى تمكين إعدادات تحديد المواقع الخاص بك للحصول على موقعك بالضبط</string>
+    <string name="noNetworkmsg">يرجى تمكين إعدادات الشبكة /تحديد المواقع الخاص بك للحصول على موقعك</string>
+    <string name="wait_gps">يرجى الانتظار لتحديد موقعك..</string>
+    <string name="textreportsuccesscomp"> شكراً لإرسال  شكوى</string>
+    <string name="textreportsuccess">شكراً لإرسال ملاحظاتك. لتقديم شكوى رسمية رجاء استخدام ايقونة الشكوى في الأسفل أو الإتصال بالخط الساخن 103. هل تود مشاركة أصدقائك هذا التطبيق؟ </string>
+    <string name="complaint_submit">You need to wait Less Than since lodged your complaint or until SP close your complaint. Please click Submit if you would like us to take it as a feedback on the SP service</string>
+    <string name="agree">موافق</string>
+    <string name="nonetwork">Please check your internet connection and try again later.</string>
+    <string name="nonetwork2">الاتصال بشبكة الانترنت غير متوفر</string>
+    <string name="agree_term">موافق</string>
+    <string name="newfeedback">ارسال تعليق جديد</string>
+    <string name="disagree_term">غير موافق</string>
+    <string name="menu_more">المزيد</string>
+    <string name="menu_home">الرئيسية</string>
+    <string name="menu_complaint">المعاملات</string>
+    <string name="menu_mylocation">الخريطة</string>
+    <string name="menu_speedtest">إختبار السرعة</string>
+    <string name="phone">الخط الثابت</string>
+    <string name="mobile">خدمة الهاتف الجوال</string>
+    <string name="delete">حذف</string>
+    <string name="error_comment_empty"> الشكوى لا يجب أن تكون فارغة</string>
+
+    <string name="run">تشغيل</string>
+    <string name="stop">إيقاف</string>
+    <string name="consumer_guid">دليل المستهلك </string>
+    <string name="faq">الأسئلة الشائعة</string>
+    <string name="service_choose">إختر نوع الخدمة التي تود إرسال تقرير عنها</string>
+    <string name="phone2">Fixed Line</string>
+    <string name="mobile2">Mobile</string>
+    <string name="terms">الشروط والاحكام</string>
+
+    <string name="enablegps">الرجاء تشغيل ال GPS</string>
+    <string name="update_title">تحديث متوفر</string>
+    <string name="update">تحديث</string>
+    <string name="update2">Update</string>
+    <string name="next">التالي</string>
+    <string name="previous">السابق</string>
+    <string name="view_file">إظهار ملف</string>
+    <string name="aboutus">عن قياس السرعة</string>
+    <string name="titlemap">الموقع الحالي</string>
+    <string name="logs">سجل التقارير</string>
+    <string name="send">إرسال</string>
+    <string name="notification">"إشعارات"</string>
+    <string name="back">رجوع</string>
+    <string name="settings">إعدادات</string>
+    <string name="settings2">الإعدادات</string>
+    <string name="more_than2">أكثر من</string>
+    <string name="less_than2">أقل من</string>
+    <string name="more_than">More than</string>
+    <string name="less_than">Less than</string>
+    <string name="theme_navy">ليل</string>
+    <string name="theme_maroon">نهار</string>
+    <string name="auto">تلقائي</string>
+    <string name="theme"> التصميم</string>
+
+    <string name="seeallconditions">الاطلاع على كافة الاحكام والشروط </string>
+    <!-- registrat form lables -->
+    <string name="registrationText">يرجى إدخال رقم هاتفك المحمول ثم انقر فوق متابعة</string>
+    <string name="mobileNum"> رقم الهاتف (إجباري)</string>
+    <string name="mobileNum_send"> رقم الهاتف</string>
+    <string name="ticket_number"> رقم المعاملة</string>
+    <string name="qatari">رقم البطاقة الشخصية (إجباري)</string>
+    <string name="Aff_qatari">رقم البطاقة الشخصية </string>
+    <string name="emailOpt">البريد الالكتروني (إختياري)</string>
+    <string name="regInf">معلومات التسجيل</string>
+    <string name="error_num_id">رقم الهاتف ورقم البطاقة الشخصية لا يجب أن يكونوا فارغين</string>
+    <string name="error_num">رقم الجوال يجب أن يتألف من ثمانية أرقام</string>
+    <string name="warning">تنبيه</string>
+    <string name="warning2">Warning</string>
+    <string name="error_id"> رقم البطاقة يجب أن يتألف من إحدى عشر رقما</string>
+    <string name="error_email">البريد الإلكتروني غير صحيح</string>
+    <string name="error_all">رقم الهاتف ورقم البطاقة الشخصية يجب أن يتألفو فقط من أرقام</string>
+    <string name="confirmation_sent">سوف يصلك رمز التفعيل عبر رسالة نصية على الرقم</string>
+    <string name="error">خطأ في رمز التفعيل</string>
+    <string name="error_code">خطأ في رمز التفعيل</string>
+    <!-- verification form lables -->
+    <string name="verifyText">أدخل رمز التفعيل</string>
+    <string name="access_code">رمز الدخول</string>
+    <string name="Finish">إنهاء</string>
+    <string name="verif_error">إذا لم يصلك رمز التفعيل خلال خمس دقائق إتصل على 103.</string>
+    <string name="enablegps2">Please enable your GPS</string>
+    <!-- complaint form lables -->
+    <string name="full_name">الإسم</string>
+    <string name="full_name_hint">الرجاء إدخال الإسم بالكامل</string>
+    <string name="subject">العنوان</string>
+
+    <string name="issue">Issue</string>
+    <string name="date">تاريخ الشكوى</string>
+    <string name="date2">Date of complaint</string>
+    <string name="location">الموقع</string>
+    <string name="called_number">الرقم الذي اتصلت منه:</string>
+    <string name="yes">نعم</string>
+    <string name="fill_all">الرجاء ملأ المعلومات</string>
+    
+    <string name="no">كلا</string>
+    <string name="yes2">Yes</string>
+    <string name="no2">No</string>
+
+    <string name="confirm_location">تعين الموقع</string>
+    <string name="aff_location">الموقع الجديد :</string>
+    <string name="current_location">هل موقع المشكلة نفس موقعك الحالي ؟</string>
+    <string name="email_address">البريد الالكتروني (إختياري)</string>
+    <string name="email_address_hint">الرجاء إدخال بريدك الإلكتروني</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="phone_number3">رقم الهاتف</string>
+    <string name="phone_number2">Affected Mobile Number</string>
+    <string name="reference_number">Ooredoo/Vodafone-الرقم المرجعي للشكوى</string>
+    <string name="complaint_details">تفاصيل الشكوى باختصار </string>
+    <string name="submit">أرسل</string>
+    <string name="submit2">Submit</string>
+    <string name="submit3">Submit</string>
+    <string name="finish">إنهاء</string>
+    <string name="complaint_phone_number"> ما هو الرقم (المحمول/الخط الثابت)الذي اتصلت منه ؟</string>
+    <string name="less_than_error">عليك تقديم شكوى إلى مزود الخدمة قبل ان تشتكي هنا.</string>
+    <string name="complaintFormTitle">تقديم شكوى</string>
+    <string name="complaint_num">رقم  شكوى</string>
+    <string name="name_error_message">يجب إدخال الإسم</string>
+    <string name="subject_error_message">يجب إدخال العنوان</string>
+    <string name="email_error_message">يجب إدخال عنوان بريد إلكتروني صحيح</string>
+    <string name="radio_group_main">حدد أختيار :</string>
+    <string name="radio_group_1">هل رفعت شكوى إلى مزود الخدمة الخاص بك؟</string>
+    <string name="radio_btn_1">نعم، وتم قبولها</string>
+    <string name="radio_btn_2">نعم، لكن لم يتم قبولها</string>
+    <string name="radio_btn_3">كلا</string>
+
+
+    <string name="buildingnb">Building No.</string>
+    <string name="zone">Zone</string>
+    <string name="street">Street</string>
+    <string name="radio_btn_corp">Corporate</string>
+    <string name="radio_btn_indv">Individual</string>
+    <string name="corp">رقم السجل التجاري </string>
+    <string name="indv">رقم البطاقة الشخصية</string>
+    <string name="corp2">C.R. Number</string>
+    <string name="indv2">Qatari ID</string>
+    <string name="radio_group_2">متى قمت بتقديم شكواك؟</string>
+    <string name="phone_error_message">يجب إدخال  رقم الهاتف</string>
+    <string name="details_error_message">يجب إدخال   تفاصيل الشكوى </string>
+    <string name="error_message">"الرجاء إصلاح الأخطاء ثم إعادة المحاولة!"</string>
+    <string name="selectprovidererror">يرجى تحديد مزود الخدمة قبل المتابعة</string>
+    <!-- speed test form titles -->
+    <string name="speedtestform_title">شارك ملاحظاتك عن نتائج إختبار السرعة</string>
+    <string name="download_speed">سرعة التنزيل</string>
+    <string name="upload_speed">سرعة التحميل</string>
+    <string name="experience">هل أنت راض عن السرعة؟</string>
+    <string name="experience2">هل أنت راض\nعن السرعة؟</string>
+    <string name="experience3">النتيجة</string>
+    <string name="isp">مزود الخدمة</string>
+    <string name="connection_type">نوع الاتصال</string>
+    <string name="tested_number">الهاتف</string>
+    <string name="email_title">البريد الإلكتروني</string>
+    <string name="comment">تعليق</string>
+    <string name="map">الخريطة</string>
+    <string name="guide">دليل\nالمستهلك </string>
+    <string name="report">التقارير</string>
+
+    <string name="complaint">Complaint</string>
+    <string name="inquiry">Inquiry</string>
+    <string name="inquiries">استفسارات</string>
+    <string name="my_ticket">المعاملات</string>
+
+    <string name="open">مفتوح</string>
+    <string name="close">مغلق</string>
+    <string name="feedback">التقييم</string>
+    <string name="feedback2">ارسل تقييمك</string>
+    <string name="category">الفئة</string>
+    <string name="category2">نوع المشكلة</string>
+    <string name="cra">رقم الشكوى المرجعي</string>
+    <string name="updatedate">تاريخ التحديث</string>
+    <string name="speed_test">إختبار\nالسرعة</string>
+    <string name="about_us">عن أرسل</string>
+    <string name="network">حال \n الشبكة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="cancel2">Cancel</string>
+    <string name="ok2">ok</string>
+    <string name="results">نتائج الفحص </string>
+    <string name="about_speed_test">عن قياس السرعة</string>
+    <string name="thanks_speedtest">شكرا لاستخدامك خدمة قياس سرعة الانترنت، هذا سيمكن هيئة تظيم الاتصالات من معرفة آراء المستهلكين عن خدمات الاتصالات.</string>
+    <string name="repeat_test">إعادة الإختبار</string>
+    <string name="share">شارك</string>
+    <!-- speed meter -->
+    <string name="download_lable">تنزيل</string>
+    <string name="upload_lable">تحميل</string>
+<string name="status">الحالة</string>
+    <string name="start_button">إبدأ قياس السرعة</string>
+    <string name="mapNote">* هذه البلاغات أرسلت من قبل المستخدمين في خلال 48 ساعة الماضية</string>
+    <string name="main_view">عرض أولي</string>
+    <string name="detailed_view">عرض تفصيلي </string>
+    <string name="number_of_errors">العدد</string>
+    <string name="type_of_errors">نوع المشكلة</string>
+    <string name="restart_button">  إعادة الإختبار   </string>
+    <string name="send_button">أرسل</string>
+    <string name="notification_settings">الاشعارات</string>
+    <string name="language_settings"> اعداد اللغة</string>
+    <string name="info_number">معلومات عن المزود</string>
+
+    <!-- send report lable -->
+    <string name="entered_info2">المعلومات التي ادخلت:</string>
+    <string name="entered_info">تفاصيل المعاملة:</string>
+    <string name="call_phone_numb">رقم الهاتف الذي اتصلت منه :</string>
+    <string name="aff_phone_number">رقم الهاتف</string>
+    <string name="email_sendrep">البريد الإلكتروني:</string>
+    <string name="comment_sendrep">ملاحظات</string>
+    <string name="sp_sendrep">مزود الخدمة</string>
+    <string name="roaming_country">بلد التجوال:</string>
+    <string name="confirm">تأكيد</string>
+    <string name="change">تعديل</string>
+    <string name="contactnumber">Contact Number</string>
+    <string name="contactnumber2">رقم التواصل</string>
+    <string name="complained_sendrep">هل رفعت شكوى إلى مزود الخدمة الخاص بك  </string>
+    <string name="wait_sendrep">وقت الانتظار </string>
+    <string name="issue_sendrep">نوع المشكلة </string>
+    <string name="error_mob_num">رقم الهاتف لا يجب أن يكون فارغ</string>
+    <string name="error_mob_num2">Mobile number can\'t be empty!</string>
+    <string name="error_mob_crnum">رقم  المؤسسة لا يجب أن يكون فارغ</string>
+    <string name="error_mob_crnum2">C.R. Number can\'t be empty!</string>
+    <string name="error_mob_qid">رقم  البطاقة الشخصية   لا يجب أن يكون فارغ</string>
+    <string name="error_mob_qid2">Qatari ID can\'t be empty!</string>
+    <string name="error_mob_qid3">Qatari ID can\'t be less than 8 digits!</string>
+    <string name="error_mob_qid4">Contact number can\'t be less than 8 digits!</string>
+    <string name="error_call_mob">رقم الهاتف لا يجب أن يكون فارغ</string>
+    <string name="error_call_date">تاريخ الاتصال لا يجب أن يكون فارغ</string>
+
+    <string name="error_call_mob2">Call mobile number can\'t be empty!</string>
+    <string name="error_call_date2">Call date can\'t be empty!</string>
+    <string name="error_cmpl_num">رقم الشكوى لا يجب أن يكون فارغ</string>
+
+    <string name="error_cmpl_num2">Complaint Reference # can\'t be empty!</string>
+    <string name="error_campl_date">تاريخ الشكوى لا يجب أن يكون فارغ</string>
+    <string name="error_campl_date2">Date of complaint can\'t be empty!</string>
+    <string name="admin">المشرف</string>
+    <string name="you">المستخدم</string>
+
+    <string name="choose_issue_type">Choose Issue Type</string>
+    <string name="choose_sp">Choose SP</string>
+
+    <string-array name="mobile_spinner">
+        <item>Ooredoo</item>
+        <item>Vodafone</item>
+    </string-array>
+
+
+    <string name="login">تسجيل دخول</string>
+    <string name="user_name">إسم المستخدم</string>
+    <string name="password">كلمة المرور</string>
+    <string name="enter_qid">رقم البطاقة الشخصية</string>
+    <string name="enter_pass">كلمة مرور حكومي</string>
+    <string name="get_account_from">الحصول على حساب من الحكومة</string>
+    <string name="dont_have_account">لا تملك حساب ؟</string>
+    <string name="register">انشاء حساب جديد</string>
+    <string name="register_other">يمكنك استخدام هذا الحساب لخدمات حكومية اخرى</string>
+    <string name="verify">تأكيد</string>
+    <string name="enter_code_by_sms">أدخل رمز التحقق الذي استلمته عبر الرسالة النصية</string>
+    <string name="resend">إعادة إرسال</string>
+    <string name="no_code">اعادة ارسال رمز التفعيل</string>
+    <string name="resend_after">إعادة الإرسال بعد</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="forgot_pass">نسيت كلمة المرور</string>
+    <string name="login_title">سجل دخولك الآن في تطبيق أرسل عن طريق اسم المستخدم و كلمة المرور الخاصة بخدمات حكومي</string>
+    <string name="reLogin">تم تسجيل هذا الحساب باستخدام جهاز آخر ، يجب عليك إعادة تسجيل الدخول</string>
+    <string name="reset_password">اعادة تعيين كلمة المرور</string>
+    <string name="unsuspend_account">إلغاء تعليق الحساب</string>
+</resources>

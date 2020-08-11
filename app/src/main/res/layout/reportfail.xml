@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true">
+<include
+        android:id="@+id/mainbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_mainbar" />
+  <TableRow
+      android:id="@+id/tableRow1"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.03"
+      >
+
+        </TableRow>
+     
+ 
+ <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.02" >
+
+      <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Report Sending Failed"
+        android:textColor="@color/red"
+        android:layout_weight="1"
+     
+        android:textStyle="bold" />
+  </TableRow>
+   <TableRow
+            android:id="@+id/tableRow3"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="0.05" >
+
+      <TextView
+        android:id="@+id/textView9872"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your Mobile Number has been blocked by the Administrator. Please contact the administrator on this number to re-enable your application."
+        android:textColor="@color/black"
+        android:layout_weight="1"
+        android:textStyle="bold" />
+      
+      
+  </TableRow>
+ <TableRow
+        android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+
+  <Button
+      android:id="@+id/cont_button"
+      android:layout_height="wrap_content"
+      android:layout_marginRight="60dp"
+      android:layout_marginLeft="60dp"
+      android:layout_weight="0.025"
+      android:background="@drawable/button"
+      android:text="Continue"
+      android:textColor="@android:color/black" />
+
+  </TableRow>
+</TableLayout>

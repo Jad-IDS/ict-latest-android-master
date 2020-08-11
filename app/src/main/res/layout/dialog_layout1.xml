@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<TextView 
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:id="@+id/dialogMsg"
+	    android:layout_marginTop="20dp"
+	    android:gravity="center"
+	     android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:layout_marginBottom="20dp"
+	    android:textColor="@color/black"
+	    android:text="jaegkbtnyujk"
+	    android:textSize="20dp"/>
+
+	<EditText
+	    android:id="@+id/numaff"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:maxLength="11"
+	     android:inputType="phone"
+	    android:ems="10" >
+
+	    <requestFocus />
+	</EditText>
+
+</LinearLayout>

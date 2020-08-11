@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/termMainTL"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerInParent="true"
+    android:background="#E6E8E8">
+
+    <include
+        android:id="@+id/mainbar"
+        layout="@layout/code_activity_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/verifyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:text="@string/verifyText"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </TableRow>
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:visibility="gone"
+        android:layout_height="0px" />
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:textSize="12sp">
+            <requestFocus/>
+            </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow211"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/finish_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background= "@drawable/button"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Finish"
+                android:paddingRight="18dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/finish_button"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/button_bordo"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Finish"
+            android:clipToPadding="false"
+            android:elevation="7dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/textView2_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="@string/verif_error"
+            android:textColor="@color/black"
+            android:textSize="9sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+      >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/progressBarLayout" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progressBar"
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:indeterminateTint="@color/gray"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </TableRow>
+
+
+</TableLayout>

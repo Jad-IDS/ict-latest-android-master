@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp" >
+
+        <!-- new row -->
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/complaintFormTitle"
+            android:textSize="20dp" />
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/name_label"
+                style="@style/formLabel"
+                android:text="@string/full_name" />
+
+            <TextView
+                style="@style/formLabelType"
+                android:layout_toRightOf="@id/name_label" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/edittext"
+            android:hint="@string/full_name_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/subject_label"
+                style="@style/formLabel"
+                android:text="@string/subject" />
+
+            <TextView
+                style="@style/formLabelType"
+                android:layout_toRightOf="@id/subject_label" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/subject"
+            style="@style/edittext"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/email_label"
+                style="@style/formLabel"
+                android:text="@string/email_address" />
+
+            <TextView
+                style="@style/formLabelType"
+                android:layout_toRightOf="@id/email_label" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/edittext"
+            android:hint="@string/email_address_hint"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/phone_label"
+                style="@style/formLabel"
+                android:text="@string/phone_number" />
+
+            <TextView
+                style="@style/formLabelType"
+                android:layout_toRightOf="@id/phone_label" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/edittext"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/reference_label"
+                style="@style/formLabel"
+                android:text="@string/reference_number" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/reference"
+            style="@style/edittext"
+            android:inputType="phone" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <RelativeLayout style="@style/tableRow" >
+
+            <TextView
+                android:id="@+id/complaint_details_label"
+                style="@style/formLabel"
+                android:text="@string/complaint_details" />
+
+            <TextView
+                style="@style/formLabelType"
+                android:layout_toRightOf="@id/complaint_details_label" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/complaint_details"
+            style="@style/edittext"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:minLines="5" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- new row -->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:onClick="submit"
+            android:text="@string/submit"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_light"
+        android:orientation="vertical">
+
+        <!-- new row -->
+
+        <TextView
+            style="@style/tableRowTitle2"
+            android:textColor="@color/bordo"
+            android:id="@+id/resultsHeader"
+            android:text="@string/results" />
+
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/downloadtxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="@string/download_speed"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/dowload_speed"
+                android:layout_marginEnd="10dp"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/uploadtxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp"
+                android:text="@string/upload_speed"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/upload_speed"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/ispTextForm"
+                android:text="@string/isp"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp"  />
+
+            <TextView
+                android:id="@+id/isp_summary_form"
+                android:layout_marginEnd="10dp"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/connectiontxt_form"
+                android:textColor="@color/black"
+                android:text="@string/connection_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="text"
+                android:textSize="14sp"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/connection_summary_form"
+                android:layout_marginEnd="10dp"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25" />
+        </LinearLayout>
+
+
+        <!-- new row -->
+
+        <TextView
+            style="@style/tableRowTitle2"
+            android:textColor="@color/bordo"
+            android:id="@+id/satisfiedHeader"
+            android:padding="5dp"
+
+            android:text="@string/experience" />
+
+        <!-- new row -->
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp">
+
+            <ListView
+                android:id="@+id/experience_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- new row -->
+
+        <TextView
+            style="@style/tableRowTitle"
+            android:text="@string/info_number"
+            android:visibility="gone"
+            android:padding="5dp" />
+        <!-- new row -->
+        <LinearLayout
+            style="@style/tableRow"
+            android:visibility="gone"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/testnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="@string/tested_number"
+                android:textColor="@color/bordo" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:visibility="gone"
+            android:padding="5dp">
+
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/bordo"
+                android:clickable="false"
+                android:textSize="14sp"
+                android:editable="false"
+                android:focusable="false"
+                android:inputType="phone" />
+        </LinearLayout>
+        <!-- new row -->
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/providertxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="14sp"
+                android:textColor="@color/bordo"
+                android:text="@string/service_provider" />
+
+            <Spinner
+                android:id="@+id/provider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+        </LinearLayout>
+        <!-- new row -->
+        <LinearLayout
+            style="@style/tableRow"
+            android:visibility="gone"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/emailtxt"
+                android:textSize="14sp"
+                android:text="@string/email_title"
+                android:textColor="@color/bordo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px" />
+
+        <LinearLayout
+            style="@style/tableRow"
+            android:visibility="gone"
+            android:padding="5dp">
+
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- new row -->
+        <LinearLayout
+            style="@style/tableRow"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/comment"
+                android:textSize="14sp"
+                android:id="@+id/commenttxt"
+                android:textColor="@color/bordo" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/tableRow" >
+
+
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/edittext_bg"
+                android:gravity="left"
+                android:textDirection="ltr"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <!-- new row -->
+
+        <LinearLayout style="@style/tableRow"
+            android:paddingTop="3dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="2dp">
+
+            <TextView
+                style="@style/tableRowTitle"
+                android:background="@color/white"
+                android:text="lookup"
+                android:gravity="left"
+                android:id="@+id/tvSpeedNote"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/go_to_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_bordo"
+                android:clipToPadding="false"
+                android:elevation="8dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:onClick="submit"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/feedback2"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

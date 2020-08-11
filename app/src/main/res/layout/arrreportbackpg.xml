@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         
+       
+      android:scrollbars="vertical"
+     
+     android:fadeScrollbars="true" > 
+     <LinearLayout android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+     <include
+        android:id="@+id/mainbar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_mainbar" />
+      <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        
+        android:layout_height="wrap_content"
+        layout="@layout/report_mainbar" />
+<TableLayout 
+   android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+      >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="رقم الهاتف"
+        android:textColor="@color/black"
+        android:gravity="right"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.01" >
+
+        <TextView
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+974 " />
+    </TableRow>
+
+          <TextView
+              android:id="@+id/tesdfsdfxtView2"
+              android:layout_height="wrap_content"
+              android:text="البريد الإلكتروني"
+              android:gravity="right"
+              android:textColor="@color/black"
+              android:textColorHint="@color/black"
+              android:textStyle="bold" />
+ 
+ <TableRow
+        android:id="@+id/tableRow3"
+            android:layout_width="fill_parent"
+              android:layout_marginLeft="10dp" 
+            android:layout_weight="0.001" >
+
+    <TextView
+      android:id="@+id/fil_num_edit_rep_detail"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+ >
+
+      <requestFocus />
+  </TextView>
+</TableRow>
+
+ <TextView
+     android:id="@+id/textView4"
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:layout_weight="1"
+     android:text="المشكلة"
+     android:gravity="right"
+     android:textColor="@color/black"
+     android:textColorHint="@color/black"
+     android:textStyle="bold" />
+
+    <TableRow
+        android:id="@+id/tableRow4"
+            android:layout_width="fill_parent"
+              android:layout_marginLeft="10dp" 
+            android:layout_weight="0.03" >
+        <TextView android:id="@+id/tesdfxtView4" android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+    <TextView
+        android:id="@+id/textVisdfew4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="التعليق"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold" />
+
+        <TableRow
+             android:layout_width="fill_parent"
+             android:layout_margin="10dp" 
+            android:layout_weight="0.01" >
+      
+  </TableRow>
+
+        <TextView
+            android:id="@+id/tesdfxtVkjiew4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="مزود الخدمة"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textStyle="bold" />
+
+  <TableRow
+        android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+              android:layout_marginLeft="10dp" 
+            android:layout_weight="0.001" >
+  <TextView
+      android:id="@+id/fill_email_edit_rep_detail"
+      android:layout_width="0dp"
+      android:layout_weight="0.25"
+      android:layout_height="wrap_content"
+      android:inputType="textEmailAddress" >
+
+     
+  </TextView>
+  </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp" 
+            android:layout_weight="0.02" >
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1" >
+
+                 <Button
+                     android:id="@+id/send_button_rep_detail"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/button"
+                     android:text="عودة"
+                     android:textColor="@android:color/white" />
+
+                 <Button
+                     android:id="@+id/cancel_button_rep_detail"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginRight="10dp"
+                     android:layout_weight="1"
+                     android:background="@drawable/button"
+                     android:visibility="gone"
+                     android:text="إرسال رسالة قصيرة"
+                     android:textColor="@android:color/white" />
+
+             </LinearLayout>
+
+        </TableRow>
+<TableRow
+        android:id="@+id/tableRow7"
+            android:layout_width="fill_parent"
+             android:layout_marginLeft="10dp" 
+            android:layout_height="0dp"
+            android:layout_weight="0.01" >
+ <TextView
+     android:id="@+id/spinCountry_rep_detail"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:paddingLeft="8dp"
+ />
+
+  </TableRow>
+   <TableRow
+        android:id="@+id/tableRow8"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.02" >
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                  android:layout_marginLeft="10dp" 
+                 android:layout_weight="1" >
+
+             </LinearLayout>
+
+        </TableRow>
+         <TableRow
+        android:id="@+id/tableRow9"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+             android:layout_marginLeft="10dp" 
+            android:layout_weight="0.03" >
+  <TextView
+      android:id="@+id/comment_edit_rep_detail"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:ems="10"/>
+  </TableRow>
+  
+           <TableRow
+        android:id="@+id/tableRow10"
+            android:layout_width="fill_parent"
+             android:layout_marginLeft="10dp" 
+            android:layout_weight="0.02" >
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1" >
+
+             </LinearLayout>
+
+        </TableRow>
+         <TableRow
+        android:id="@+id/tableRow11"
+            android:layout_width="fill_parent"
+             android:layout_marginLeft="10dp" 
+            android:layout_height="0dp"
+            android:layout_weight="0.001" >
+   <TextView
+     android:id="@+id/spinSP_rep_detail"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="5dp"
+     android:paddingLeft="8dp"
+ />
+  </TableRow>
+            <TableRow
+            android:id="@+id/tableRow12"
+             android:layout_marginLeft="10dp" 
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05" >
+
+      
+     
+  </TableRow>
+          
+  <TableRow
+        android:id="@+id/tableRow13"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+
+             <LinearLayout
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1" >
+
+                 <TextView
+                     android:id="@+id/textVw1"
+                     android:layout_width="0dp"
+                      android:layout_height="fill_parent"
+                     android:layout_weight="1"
+                     />
+
+                 <TextView
+                     android:id="@+id/textView5"
+                     android:layout_width="0dp"
+                     android:layout_height="fill_parent"
+                     android:layout_weight="1"
+                     />
+             </LinearLayout>
+
+        </TableRow>
+       
+     
+</TableLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/app_mainbar" />
+        <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+<TableLayout 
+  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/mainbar"
+       >
+
+
+  <TableRow
+      android:id="@+id/tableRow1"
+      android:layout_width="fill_parent"
+      android:layout_height="0dp"
+      android:layout_weight="0.03"
+      >
+
+        </TableRow>
+     
+ 
+ <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.02" >
+  </TableRow>
+   <TableRow
+            android:id="@+id/tableRow3"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.05" >
+
+       <TextView
+           android:id="@+id/textView2"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+          android:padding="15dp"
+          android:layout_margin="15dp"
+           android:gravity="right"
+           android:text="شكراً لإرسال ملاحظاتك. لتقديم شكوى رسمية رجاء استخدام ايقونة الشكوى في الأسفل أو الإتصال بالخط الساخن 103. هل تود مشاركة أصدقائك هذا التطبيق؟ "
+           android:textColor="@color/black"
+           android:textStyle="bold" />
+      
+  </TableRow>
+  
+     <TableRow
+        android:id="@+id/tableRow13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1" >
+
+             <TextView
+                 android:id="@+id/textVw1"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1" />
+
+             <Button
+                 android:id="@+id/sharefb"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/fb"
+                 android:textColor="@android:color/white" />
+
+             <ImageView
+                 android:id="@+id/sharetw"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_marginLeft="10dp"
+                 android:src="@drawable/twt"
+                 android:textColor="@android:color/white" />
+
+             <TextView
+                 android:id="@+id/textView5"
+                 android:layout_width="0dp"
+                 android:layout_height="fill_parent"
+                 android:layout_weight="1" />
+         </LinearLayout>
+
+        </TableRow>
+
+     <TableRow
+         android:id="@+id/tableRow4"
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="0.3" >
+
+         <Button
+             android:id="@+id/cont_button_rep"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="60dp"
+             android:layout_marginRight="60dp"
+             android:layout_marginTop="26dp"
+             android:layout_weight="0.025"
+             android:background="@drawable/button"
+             android:text="متابعة"
+             android:textColor="@android:color/black" />
+     </TableRow>
+
+</TableLayout>
+
+</RelativeLayout>

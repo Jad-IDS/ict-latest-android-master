@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/code_activity_top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/footer"
+            android:background="#ffffff"
+        android:layout_below="@id/mainbar" >
+
+        <LinearLayout
+            android:id="@+id/layoutToMove"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/settings_menu_layout"
+                style="@style/more_item_layout">
+
+                <ImageView
+                    android:id="@+id/settings_guid_image"
+                    style="@style/more_image"
+                    android:src="@drawable/setting" >
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/consumer_guid_title"
+                    style="@style/more_text"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@id/settings_guid_image"
+                    android:text="@string/settings" >
+                </TextView>
+            </RelativeLayout>
+
+            <View style="@style/more_separator" />
+
+            <RelativeLayout
+                android:id="@+id/faq_layout"
+                android:visibility="gone"
+                style="@style/more_item_layout" >
+
+                <ImageView
+                    android:id="@+id/faq_image"
+                    style="@style/more_image"
+                    android:src="@drawable/faq" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/faq_title"
+                    style="@style/more_text"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@id/faq_image"
+                    android:text="@string/faq" >
+                </TextView>
+            </RelativeLayout>
+
+            <View style="@style/more_separator" />
+
+            <RelativeLayout
+                android:id="@+id/terms_layout"
+                style="@style/more_item_layout" >
+
+                <ImageView
+                    android:id="@+id/terms_image"
+                    style="@style/more_image"
+                    android:src="@drawable/conditions" >
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/terms_title"
+                    style="@style/more_text"
+                    android:layout_marginStart="2dp"
+                    android:layout_toRightOf="@id/terms_image"
+                    android:text="@string/terms" >
+                </TextView>
+            </RelativeLayout>
+
+            <View style="@style/more_separator" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+
+</RelativeLayout>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ids.ict">
+    <!-- added for google maps -->
+    <permission
+        android:name="com.ids.ict.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" /> <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+    <uses-permission android:name="com.ids.ict.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" /> <!--  -->
+    <!-- push notification -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="com.ids.ict.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.ids.ict.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+
+        android:fullBackupContent="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@android:style/Theme.Black.NoTitleBar"
+
+        android:usesCleartextTraffic="true">
+        <!-- android:theme="@android:style/Theme.Black.NoTitleBar"-->
+        <activity
+            android:name=".activities.webViewActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" /> <!-- notification -->
+        <!-- added for google maps -->
+        <activity
+            android:name=".activities.QosTermsActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" /> <!--  -->
+        <activity
+            android:name=".activities.SplashActivity"
+            android:configChanges="orientation|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.HomePageActivity"
+            android:configChanges="orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LanguageActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.shareActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationDetailsActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TwitterActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CodeActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".activities.CodeNewActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".activities.FaqActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SendReportActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FailedReportActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AboutUsPagination"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" />
+        <activity
+            android:name=".activities.ReportDetailsActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.NotificationListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ComplaintActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CoomplaintActivityOld"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ComplainFormActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".classes.ArReportsNotificationListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ArreportActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".classes.ArReportsListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|locale"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ReportFailActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Facebook1Activity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FacebookActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SuccessReportConfirmActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".classes.ReportsListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".classes.ReportsNotificationListActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsNewActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TermsActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysVisible" />
+        <activity
+            android:name=".activities.LoginNewActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden" />
+<!--        android:theme="@style/Theme.AppCompat.Light"-->
+
+        <activity
+            android:name=".activities.reportActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activities.SpeedTestActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MoreActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.toMoreActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ConsumerActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MyLocationActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeedTestNewActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SpeedTestFormActivity"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PopUpTicketActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".activities.PopUpImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".activities.TermsConditionsPopup"
+            android:configChanges="orientation|locale"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBXLAbAqDkUOtnh8D_yu7Zr8rRDlwN6iTY" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name=".classes.InternetReceiver"
+            android:enabled="true">
+            <intent-filter>
+
+                <!-- Intent filters for broadcast receiver -->
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.ids.ict.classes.InternetReceiver" />
+            </intent-filter>
+        </receiver> <!-- for notification -->
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+<service android:name=".services.OfflineJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        -->
+        <service
+            android:name=".services.OnlineCheckJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service
+            android:name=".services.QosFcmJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <service android:name=".services.NetworkService" />
+        <service android:name=".services.QosFcmService" />
+        <service android:name=".services.QosFcmServiceTest" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/red" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="0b7b08618aa79aed9193a9e1e33ccf44dd0cc1e5" />
+
+    </application>
+
+</manifest>

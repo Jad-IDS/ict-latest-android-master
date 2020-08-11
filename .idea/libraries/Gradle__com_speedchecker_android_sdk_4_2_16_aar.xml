@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.speedchecker:android-sdk:4.2.16@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-4.2.16.aar/0778ed6242ffd7fd5095a7dadbf8dee5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-sdk-4.2.16.aar/0778ed6242ffd7fd5095a7dadbf8dee5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

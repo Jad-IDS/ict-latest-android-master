@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:text="@+id/issue" android:id="@+id/TextView01"
+android:layout_width="fill_parent" android:layout_height="fill_parent" 
+android:ellipsize="end"
+android:gravity="center"
+android:layout_gravity="center"
+android:padding="20dp"
+android:textSize="@dimen/spinner_list_text_size"
+></TextView>

@@ -1,0 +1,10 @@
+<resources>
+
+    <!--<dimen name="margin">120dp</dimen>-->
+    <!--<dimen name="margin_down">96dp</dimen>-->
+    <dimen name="margin">110dp</dimen>
+    <dimen name="margin_down">98dp</dimen>
+    <dimen name="margin_2">80dp</dimen>
+    <!--<dimen name="margin_3">95dp</dimen>98   92     90 -->
+    <dimen name="margin_3">85dp</dimen>
+</resources>

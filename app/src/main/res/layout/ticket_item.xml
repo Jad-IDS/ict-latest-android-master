@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ticket_item"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_item"
+    android:showDividers="middle" >
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/sendingdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/cra"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/updatedate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="0.6"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:id="@+id/img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="2dp"
+        android:layout_weight="0.3"
+        android:clickable="true"
+        android:background="@color/white"
+       >
+
+        <ImageView
+            android:id="@+id/ticketimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/messagemaroon"
+            android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/imggg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:layout_weight="0.3"
+        android:clickable="false"
+        android:padding="2dp"
+        android:background="@color/white"
+   >
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:src="@drawable/arrowmaroon"
+            android:layout_centerInParent="true"
+           />
+    </RelativeLayout>
+</LinearLayout>

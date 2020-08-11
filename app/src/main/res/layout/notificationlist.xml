@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_light"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listMenu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:divider="#ffffff"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/layoutToMove"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/mainbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/code_activity_top" />
+
+        <include
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/menu_footer_new" />
+
+        <ListView
+            android:id="@+id/events_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/footer"
+            android:layout_below="@+id/mainbar"
+            android:background="@color/gray_light"
+            android:divider="@color/white"
+            android:dividerHeight="1dip"
+            android:smoothScrollbar="true" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>

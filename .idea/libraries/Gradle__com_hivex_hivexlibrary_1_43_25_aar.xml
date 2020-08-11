@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.hivex:hivexlibrary:1.43.25@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hivexlibrary-1.43.25.aar/5bd9cf67fc16285b52b3274e503dbc06/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/hivexlibrary-1.43.25.aar/5bd9cf67fc16285b52b3274e503dbc06/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

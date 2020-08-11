@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/mainbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/code_activity_top" />
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/menu_footer_new" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:fillViewport="true"
+        android:layout_below="@id/mainbar"
+        android:background="@color/gray_light" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/news_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="11sp" >
+            </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            android:background="@color/white"
+            android:layout_marginEnd="10dp"
+            >
+            <WebView
+                android:id="@+id/wvDetials"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:fitsSystemWindows="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/news_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:maxLength="1000000"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" >
+                </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

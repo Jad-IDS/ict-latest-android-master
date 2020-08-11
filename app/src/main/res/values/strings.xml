@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="sender_id">691248836351</string>
+    <string name="api_key">AIzaSyB2IAUBfO_55EWLxVM96irdgVWZiEAiHto</string>
+    <string name="notification_key">notification</string>
+    <string name="device_id">device_id</string>
+    <string name="enable_qos">enable_qos</string>
+    <string name="go_qos">go_qos</string>
+    <string name="enable_notification">enable_notification</string>
+    <string name="notification_enabled">true</string>
+
+
+    <string name="schedule_id">sched_id</string>
+    <string name="schedule_enabled">sched_enabled</string>
+    <string name="schedule_freq">schedule_freq</string>
+    <string name="schedule_start">schedule_start</string>
+
+
+    <!-- new added -->
+    <string name="send_comment0">Follow Up</string>
+    <string name="send_comment">Follow Up</string>
+    <string name="send_comment2">Send Comment</string>
+    <string name="update_location">Update location</string>
+    <string name="language_key">language</string>
+    <string name="useragent">Mozilla/5.0 (Linux; Android 2.2; Nexus 5 Build/BuildID) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36</string>
+    <string name="logo">logo</string>
+    <string name="app_name">Arsel</string>
+    <string name="wait_gps">Please wait while we identify your location</string>
+    <string name="server_registered">Registered to server to receive push notifications</string>
+    <string name="server_unregistered">Un-Registered from server to stop receiving push notifications</string>
+    <string name="ok">Ok</string>
+    <string name="newfeedback">Send new comment</string>
+    <string name="All">All</string>
+    <string name="ServiceProviderChoose">Select Provider</string>
+    <string name="upload">Upload File</string>
+    <string name="sendlocation">Send location</string>
+    <string name="delete">Delete</string>
+    <string name="service_provider">Service provider</string>
+    <string name="service_provider2">مزود الخدمة</string>
+    <string name="error_comment_empty">Comment can\'t be empty </string>
+    <string name="aboutspeedtest">About Speed test</string>
+    <string name="issue_type">Issue Type</string>
+    <string name="action_settings">Settings</string>
+    <string name="updatepopup">Please update the Arsel application</string>
+    <string name="lang">en</string>
+    <string name="loading">Loading</string>
+    <string name="failedtitle">Report Sending Failed</string>
+    <string name="failedtext">Failed to sent report because of no internet connectivity. The message will be sent directly after you connect to the internet</string>
+    <string name="failedbutton">Continue</string>
+    <string name="networkSuccesmsg">Network Provider Enabled. Please Enable your GPS settings to get your exact location</string>
+    <string name="noNetworkmsg">Please Enable your Network/GPS settings to get your location</string>
+    <string name="textreportsuccesscomp">Thank you for sending your complaint</string>
+    <string name="textreportsuccess">Thank you for your feedback, to lodge a formal complaint please use the complaint icon in the bar below or call 103. Would you like to share this app with your friends</string>
+    <string name="agree">Agree</string>
+    <string name="agree_term">I Agree</string>
+    <string name="disagree_term">I Disagree</string>
+    <string name="menu_more">More</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_complaint">Complaint</string>
+    <string name="menu_mylocation">Map</string>
+    <string name="menu_speedtest">Speed Test</string>
+    <string name="service_choose">Please choose which service you would like to report your feedback</string>
+    <string name="mobile">Mobile</string>
+
+
+    <string name="nonetwork">الاتصال بشبكة الانترنت غير متوفر</string>
+    <string name="nonetwork2">Please check your internet connection and try again later.</string>
+    <string name="mobile2">خدمات الجوال</string>
+    <string name="phone">Fixed Line</string>
+    <string name="phone2">خدمات الخط الثابت</string>
+    <string name="run">ON</string>
+    <string name="stop">OFF</string>
+    <string name="consumer_guid">Consumer Guide</string>
+    <string name="faq">FAQ</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="view_file">View file</string>
+    <string name="aboutus">About Speed Test</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="titlemap">Your Current location</string>
+    <string name="logs">Logs</string>
+    <string name="send">Send</string>
+    <string name="notification">Notification</string>
+    <string name="back">Back</string>
+    <string name="settings2">Setup</string>
+
+    <string name="more_than">أكثر من</string>
+    <string name="less_than">أقل من</string>
+    <string name="seeallconditions">View all Terms and Conditions</string>
+    <string name="more_than2">more than</string>
+    <string name="less_than2">less than</string>
+    <!-- register form lables -->
+    <string name="registrationText">Please enter your Mobile number then click Continue.</string>
+    <string name="mobileNum">Mobile Number (required)</string>
+    <string name="mobileNum_send">Mobile Number </string>
+    <string name="ticket_number">Ticket Number </string>
+    <string name="qatari">Qatari ID (required)</string>
+    <string name="Aff_qatari">Qatari ID</string>
+    <string name="emailOpt">Email (optional)</string>
+    <string name="regInf">Registration Information</string>
+    <string name="error_num_id">Number,Qatar ID can\'t be empty!</string>
+    <string name="error_num">The Mobile Number must be 8 digits!</string>
+    <string name="error_id">The Qatari ID must be 11 digits!</string>
+    <string name="error_email">Email wasnt in correct format</string>
+    <string name="warning">Warning</string>
+    <string name="warning2">تنبيه</string>
+    <string name="error">Invalid OTP</string>
+    <string name="error_code">Please enter Valid code</string>
+    <string name="error_all">Mobile Number,Qatar ID must be a number!</string>
+    <string name="confirmation_sent">اسوف يصلك رمز التفعيل عبر رسالة نصية على الرقم</string>
+
+    <!-- verification form lables -->
+    <string name="verifyText">Please enter the verification code that you received by SMS</string>
+    <string name="access_code">Access code</string>
+    <string name="Finish">Finish</string>
+    <string name="verif_error">If you did not receive the code in 5 minutes, please call 103.</string>
+    <string name="enablegps2">الرجاء تشغيل ال GPS</string>
+    <!-- complaint form lables -->
+    <string name="full_name">Name</string>
+    <string name="full_name_hint">Please fill in your full name</string>
+    <string name="fill_all">Please fill both fields</string>
+    <string name="subject">Subject</string>
+    <string name="email_address">Email (optional)</string>
+    <string name="email_address_hint">Please supply your e-mail address</string>
+    <string name="issue">نوع المشكلة</string>
+    <string name="star">*</string>
+    <string name="phone_number">Affected Mobile Number </string>
+    <string name="phone_number3">Affected Number </string>
+    <string name="phone_number2">الرقم المتضرر</string>
+    <string name="reference_number">Ooredoo/Vodafone- Complaint Reference Number</string>
+    <string name="complaint_details">  Complaint Details in Brief</string>
+    <string name="complaint_phone_number">  What is the mobile/fixed line number you called from ? </string>
+    <string name="submit">Submit</string>
+    <string name="submit2">أرسل</string>
+    <string name="submit3">إرسال</string>
+    <string name="finish">finish</string>
+    <string name="complaintFormTitle">Complaint Form</string>
+    <string name="name_error_message"> Must enter your name </string>
+    <string name="subject_error_message">Must enter the subject</string>
+    <string name="email_error_message">Must enter a valid email</string>
+    <string name="phone_error_message">Must enter the phone number</string>
+    <string name="less_than_error">You should complain to the service provider before complaining here.</string>
+    <string name="complaint_submit">You need to wait Less Than since lodged your complaint or until SP close your complaint. Please click Submit if you would like us to take it as a feedback on the SP service</string>
+    <string name="radio_group_main">Choose one option :</string>
+    <string name="radio_group_1">Did you complain to your service provider?</string>
+    <string name="radio_btn_1">Yes, and it was accepted</string>
+    <string name="radio_btn_2">Yes, but SP didn\'t accept it</string>
+    <string name="radio_btn_3">No</string>
+    <string name="open">Open</string>
+    <string name="buildingnb">رقم المبنى</string>
+    <string name="zone">منطقة</string>
+    <string name="street">شارع</string>
+    <string name="radio_btn_corp">مؤسسة</string>
+    <string name="radio_btn_indv">فردي</string>
+    <string name="corp2">رقم السجل التجاري</string>
+    <string name="indv2">رقم البطاقة الشخصية</string>
+
+    <string name="corp">C.R. Number</string>
+    <string name="indv">Qatari ID </string>
+    <string name="date">Date of complaint:</string>
+
+    <string name="date2">تاريخ الشكوى</string>
+    <string name="number">Number </string>
+    <string name="called_number">Number you called from</string>
+    <string name="location">location</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="yes2">نعم</string>
+
+    <string name="no2">كلا</string>
+    <string name="con">no</string>
+    <string name="complaint_num">Complaint Num</string>
+    <string name="radio_group_2">When was your complaint lodged?</string>
+    <string name="confirm_location">confirm location</string>
+    <string name="aff_location">Affected location :</string>
+    <string name="current_location">Is the affected location same as the current location ? </string>
+    <string name="error_message">"Please fix errors then try again!"</string>
+    <string name="selectprovidererror">Please select service provider before you proceed</string>
+
+    <!-- speed test form titles -->
+    <string name="speedtestform_title">Share your feedback on speed test results</string>
+    <string name="download_speed">Download\nSpeed</string>
+    <string name="upload_speed">Upload speed</string>
+    <string name="experience">Are you satisfied with your speed?</string>
+    <string name="experience2">Are you satisfied\nwith your speed?</string>
+    <string name="experience3">Experience</string>
+    <string name="isp">ISP</string>
+    <string name="connection_type">Connection Type</string>
+    <string name="tested_number">Tested number</string>
+    <string name="email_title">Email</string>
+    <string name="comment">Comment</string>
+    <string name="map">map</string>
+    <string name="guide">guide</string>
+    <string name="speed_test">speed test</string>
+    <string name="about_us">About Arsel</string>
+    <string name="network">network</string>
+    <string name="report">report</string>
+    <string name="complaint">شكوى</string>
+    <string name="inquiry"> إستفسار</string>
+    <string name="inquiry2">Inquiries</string>
+    <string name="inquiries">Inquiries</string>
+    <string name="my_ticket">My Ticket</string>
+    <string name="cancel2">إلغاء</string>
+    <string name="ok2">تم</string>
+
+    <string name="close">Close</string>
+    <string name="feedback">Feedback</string>
+    <string name="feedback2">Submit your Feedback</string>
+    <string name="cancel">Cancel</string>
+    <string name="results"> Results</string>
+    <string name="about_speed_test"> About Speed Test</string>
+    <string name="thanks_speedtest">Thanks for using CRA Speed test, which will definitely enable CRA to know consumers’ feedback about the telecom services.</string>
+    <string name="details_error_message">يجب إدخال   تفاصيل الشكوى </string>
+    <string name="repeat_test"> Test again</string>
+    <string name="share">Share</string>
+    <string name="contactnumber">رقم التواصل</string>
+    <string name="contactnumber2">Contact number</string>
+    <!-- speed meter -->
+    <string name="download_lable">Download</string>
+    <string name="upload_lable">Upload</string>
+    <string name="start_button">Start Test</string>
+    <string name="mapNote">* The shown data are based on real reports from consumers within the past 48 hours</string>
+    <string name="main_view">Main View</string>
+    <string name="detailed_view">Detailed View</string>
+    <string name="number_of_errors">Number</string>
+    <string name="type_of_errors"> Issue Type</string>
+    <string name="restart_button">restart</string>
+    <string name="send_button">send</string>
+    <string name="settings">Settings</string>
+    <string name="category">Category</string>
+    <string name="category2">Category</string>
+    <string name="cra">CRA</string>
+    <string name="updatedate">Update date</string>
+    <string name="notification_settings">Notification Center</string>
+    <string name="language_settings">Language settings</string>
+    <string name="info_number">Carrier Info</string>
+    <string name="theme_navy">Navy</string>
+    <string name="theme_maroon">Maroon</string>
+    <string name="auto">Auto</string>
+    <string name="theme">Theme</string>
+
+    <!-- send report lable -->
+    <string name="entered_info">Your ticket details:</string>
+    <string name="entered_info2">Your have just entered:</string>
+    <string name="call_phone_numb">Phone number you called from:</string>
+    <string name="email_sendrep">E-mail:</string>
+    <string name="comment_sendrep">Comments</string>
+    <string name="sp_sendrep">Service Provider</string>
+    <string name="roaming_country">Roaming Country:</string>
+    <string name="confirm">Confirm</string>
+    <string name="change">Edit</string>
+    <string name="status">Status</string>
+    <string name="aff_phone_number">Affected Mobile Number</string>
+    <string name="wait_sendrep">Wait time </string>
+    <string name="complained_sendrep">Did you complain omplained to your service provider </string>
+    <string name="issue_sendrep">Issue type </string>
+    <string name="error_mob_num">Mobile number can\'t be empty!</string>
+    <string name="error_mob_num2">رقم الهاتف لا يجب أن يكون فارغ</string>
+    <string name="error_mob_crnum2">رقم  السجل التجاري لا يجب أن يكون فارغ</string>
+    <string name="error_mob_crnum">C.R. Number can\'t be empty!</string>
+    <string name="error_mob_qid">Qatari ID can\'t be empty!</string>
+    <string name="error_mob_qid2">رقم  البطاقة يجب أن يتألف من احدى عشر رقما.</string>
+    <string name="error_mob_qid3">رقم  البطاقة يجب أن يتألف من ثمانية ارقام.</string>
+    <string name="error_mob_qid4">رقم التواصل يجب أن يتألف من ثمانية ارقام.</string>
+    <string name="error_call_mob">Call mobile number can\'t be empty!</string>
+    <string name="error_call_date">Call date can\'t be empty!</string>
+
+    <string name="error_call_mob2">رقم الهاتف الذي اتصلت منه لا يجب أن يكون فارغ</string>
+    <string name="error_call_date2">تاريخ الاتصال لا يجب أن يكون فارغ</string>
+    <string name="error_cmpl_num">Complaint Reference # can\'t be empty!</string>
+
+    <string name="enablegps">Please enable your GPS</string>
+    <string name="update_title">Update Available</string>
+    <string name="update">Update</string>
+    <string name="update2">تحديث</string>
+    <string name="first_launch">first_launch</string>
+    <string name="is_blocked">is_blocked</string>
+    <string name="error_cmpl_num2">رقم الشكوى لا يجب أن يكون فارغ</string>
+    <string name="error_campl_date">Date of complaint can\'t be empty!</string>
+    <string name="error_campl_date2">تاريخ الشكوى لا يجب أن يكون فارغ</string>
+    <string name="admin">Admin</string>
+    <string name="you">User</string>
+
+    <string name="qos_settings">QOS settings</string>
+
+    <string name="choose_issue_type">اختر نوع المشكلة</string>
+    <string name="choose_sp">اختر مزود الخدمة</string>
+
+    <string-array name="mobile_spinner">
+        <item>Ooredoo</item>
+        <item>Vodafone</item>
+    </string-array>
+
+
+    <string name="login">Login</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="enter_qid">Enter QID</string>
+    <string name="enter_pass">Hukoomi Password</string>
+    <string name="get_account_from">Get account from the government</string>
+    <string name="dont_have_account">Dont have account ?</string>
+    <string name="register">Register</string>
+    <string name="register_other">This account will enable you to access other government applications</string>
+    <string name="verify">Verify</string>
+    <string name="enter_code_by_sms">Enter code received by sms</string>
+    <string name="resend">Resend</string>
+    <string name="no_code">Send Code Again</string>
+    <string name="resend_after">Resend after</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_pass">Forgot Password</string>
+    <string name="login_title">Log in now in Arsel application using Hukoomi credentials</string>
+    <string name="reLogin">This Account is Logged with other Device , You must re-Login</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="unsuspend_account">Unsuspend account</string>
+
+</resources>

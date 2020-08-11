@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#E6E8E8">
+
+    <include
+        android:id="@+id/mainbar"
+        layout="@layout/code_activity_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp" >
+
+        <TextView
+            android:id="@+id/verifyText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/enter_code_by_sms"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0px"
+        android:visibility="gone"
+        android:layout_height="0px" />
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:gravity="center"
+            android:inputType="phone"
+            android:maxLength="1"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="17sp">
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/etCode1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:maxLength="1"
+            android:textSize="17sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/etCode2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:maxLength="1"
+            android:textSize="17sp">
+        </EditText>
+
+        <EditText
+            android:id="@+id/etCode3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="phone"
+            android:textColorHint="@color/black"
+            android:maxLength="1"
+            android:textSize="17sp">
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow211"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp" />
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:id="@+id/finish_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:background= "@drawable/button"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:id="@+id/txtEn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/finish"
+                android:paddingEnd="18dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:id="@+id/finish_button"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bordo"
+            android:layout_gravity="center"
+            android:text="@string/verify"
+            android:textSize="16sp"
+            android:elevation="7dp" />
+
+    </TableRow>
+
+    <!--<TableRow-->
+    <!--android:id="@+id/tableRow21"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:layout_marginLeft="10dp" >-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/textView2_1"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginStart="10dp"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:text="@string/enter_code_by_sms"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:textSize="14sp" />-->
+
+
+    <!--</TableRow>-->
+
+
+    <TableRow
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:id="@+id/btn_resends"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/button_bordo"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/resend"
+            android:clipToPadding="false"
+            android:elevation="7dp"/>
+
+        <!--<Button-->
+        <!--android:id="@+id/btn_resend"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginTop="0dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:background="@drawable/transperent_selector"-->
+        <!--android:text="@string/resend"-->
+        <!--android:textColor="@color/gray"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:elevation="7dp" />-->
+
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:text="@string/resend_after"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnResend"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/button_bordo"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:text="@string/resend"
+                android:textSize="16sp"
+                android:elevation="7dp" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:id="@+id/progressBarLayout" >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:id="@+id/progressBar"
+                style="@style/Base.Widget.AppCompat.ProgressBar"
+                android:indeterminateTint="@color/gray"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="visible"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </TableRow>
+</TableLayout>

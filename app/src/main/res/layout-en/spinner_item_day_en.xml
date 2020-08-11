@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".9"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        android:gravity="left"
+
+        android:maxLines="1"
+        android:text="@+id/TextView01"
+        android:textSize="13sp" >
+    </TextView>
+
+
+    <ImageView
+        android:id="@+id/spinnerArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight=".1"
+        android:src="@drawable/arrow_spinner" />
+
+</LinearLayout>

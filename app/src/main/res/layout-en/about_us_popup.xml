@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="right"
+            android:background="@color/white"
+            android:clickable="true"
+
+            android:padding="5dp"
+            android:text="X"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/abouttitle"
+            android:text="@string/about_speed_test"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+
+        android:layout_height="wrap_content"></WebView>
+
+    <TextView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="15dp"
+
+        android:layout_marginBottom="5dp"
+        android:background="@color/gray_light"
+
+        android:text="@string/ok2"
+
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>

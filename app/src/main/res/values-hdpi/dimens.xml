@@ -1,0 +1,19 @@
+<resources>
+
+    <!--<dimen name="margin">96dp</dimen>-->
+    <!--<dimen name="margin_down">96dp</dimen>-->
+    <dimen name="margin">94dp</dimen>
+    <dimen name="margin_down">94dp</dimen>
+    <dimen name="margin_2">80dp</dimen>
+    <!--<dimen name="margin_3">83dp</dimen>71-->
+    <dimen name="margin_3">71dp</dimen>
+
+
+
+
+
+    <dimen name="img_height">70dp</dimen>
+    <dimen name="img_height2">80dp</dimen>
+    <dimen name="img_width">70dp</dimen>
+    <dimen name="img_width2">80dp</dimen>
+</resources>

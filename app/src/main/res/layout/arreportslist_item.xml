@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+ 
+<TextView
+        android:id="@+id/title_textView_rep"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+         android:padding="4dp"
+     
+        android:text="TextView"
+        android:textSize="13dp"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/LinearLaydfout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/title_textView_rep"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/news_bullet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+        	 android:scaleType="fitCenter" />
+        
+                
+
+         
+
+       <TextView
+        android:id="@+id/description_textView_rep"
+        android:layout_below="@id/title_textView"
+        android:layout_centerVertical="true"
+      
+        android:layout_width="fill_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+   
+         android:layout_toRightOf="@id/news_bullet"
+        android:textSize="13dp"
+         android:padding="4dp"
+        android:maxLines="2"
+        android:text="TextViewddd;ddddddddddd;ddddddddddd;dddddddddddddd;ddddddd;dddddddddd;ddddddddddd;dddddddddddd;ddddd"
+        android:textColor="@color/black" />
+      
+     
+    </RelativeLayout>
+    
+     
+    
+
+
+
+</RelativeLayout>
